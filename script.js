@@ -1,16 +1,3 @@
-function addName() {
-    var name = prompt("Enter Name: (Max 10 Characters.)");
-
-    if (name.length > 10) {
-        document.getElementById("name").innerHTML = "Anonym"
-        alert("Characters Maximum")
-    } else if (name === "") {
-        document.getElementById("name").innerHTML = "Anonym"
-    } else {
-        document.getElementById("name").innerHTML = name
-    }
-}
-
 function clock() {
     const clock = new Date();
     let hours = clock.getHours().toString();
@@ -88,7 +75,6 @@ function quotes() {
 }
 
 setInterval(clock, 1000);
-addName();
 clock();
 background();
 quotes();
