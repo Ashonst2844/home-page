@@ -4,6 +4,8 @@ function addName() {
     if (name.length > 10) {
         document.getElementById("name").innerHTML = "Anonym"
         alert("Characters Maximum")
+    } else if (name === "") {
+        document.getElementById("name").innerHTML = "Anonym"
     } else {
         document.getElementById("name").innerHTML = name
     }
